@@ -1,0 +1,92 @@
+.text-box--items {
+  position: relative;
+  bottom: 22rem;
+  color: #023047;
+  margin-left: 2rem;
+}
+
+.text-welcome {
+  font-size: 1.5rem;
+  margin-left: 13rem;
+}
+
+.text-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.text-desc {
+  width: 30%;
+  margin-top: 1rem;
+  color: #6c757d;
+  margin-left: 1.5rem;
+}
+
+.text-btn {
+  background-color: #219ebc;
+  color: white;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 14rem;
+  border-radius: 3px;
+}
+
+.text-btn:hover {
+  background-color: #023047;
+}
+
+/* === Text responsive === */
+@media (max-width: 767px) {
+  .text-box--items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+    color: #219ebc;
+    white-space: nowrap;
+  }
+
+  .text-welcome {
+    font-size: 1rem;
+  }
+
+  .text-title {
+    font-size: 1.5rem;
+  }
+
+  .text-desc {
+    font-size: 1rem;
+    margin-left: 0;
+    white-space: break-spaces;
+  }
+
+  .text-btn {
+    top: 18rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  .text-box--items {
+    color: #219ebc;
+  }
+
+  .text-welcome {
+    margin-left: 8rem;
+  }
+
+  .text-title {
+    font-size: 2rem;
+  }
+
+  .text-desc {
+    width: 41.5%;
+  }
+
+  .text-btn {
+    font-size: 1.1rem;
+  }
+}

@@ -3,6 +3,7 @@ import headerBg from "../../assets/img/header-bg.jpg";
 import logo from "../../assets/img/logo.jpeg";
 import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
+import Text from "./Text/Text";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
@@ -53,6 +54,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+        <Text/>
       </header>
     </>
   );
