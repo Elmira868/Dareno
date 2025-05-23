@@ -4,6 +4,8 @@ import logo from "../../assets/img/logo.jpeg";
 import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
 import Text from "./Text/Text";
+import Features from "./Features/Features";
+import info from './data';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
@@ -55,6 +57,11 @@ export default function Header() {
           </div>
         </div>
         <Text/>
+        <div className="feature-box">
+          <Features {...info[0]}/>
+        <Features {...info[1]}/>
+        <Features {...info[2]} className="special-feature" />
+        </div>
       </header>
     </>
   );

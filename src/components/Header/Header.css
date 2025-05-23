@@ -69,6 +69,14 @@ a {
 .close {
   display: none;
 }
+
+.feature-box {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 16rem;
+}
+
 /* === Header responsive === */
 
 @media (max-width: 767px) {
@@ -85,6 +93,17 @@ a {
   .logo {
     width: 80px;
     height: 50px;
+  }
+
+  .feature-box {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(1, 1fr) !important;
+    grid-column-gap: 0px !important;
+    grid-row-gap: 0px !important;
+    position: absolute !important;
+    bottom: -214px !important;
+    width: 100% !important;
   }
 }
 
@@ -109,6 +128,14 @@ a {
     display: block;
     margin-left: 70vw;
     font-size: 2.5rem;
+  }
+
+  .feature-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 }
 

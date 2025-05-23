@@ -47,6 +47,7 @@
     margin-left: 0;
     color: #219ebc;
     white-space: nowrap;
+    bottom: 36rem !important;
   }
 
   .text-welcome {
@@ -72,6 +73,7 @@
 @media (min-width: 768px) and (max-width: 993px) {
   .text-box--items {
     color: #219ebc;
+    bottom: 40rem !important;
   }
 
   .text-welcome {
