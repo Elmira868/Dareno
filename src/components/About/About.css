@@ -1,0 +1,40 @@
+
+.about-box{
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.about-box--img{
+    position: relative;
+    padding: 2rem 3rem;
+}
+
+.window-img{
+    width: 450px;
+    height: 450px;
+}
+
+.about-img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: -30px;
+    right: -70px;
+}
+
+.about-us--texts{
+    text-align: right;
+    padding: 2rem 3rem;
+    overflow: hidden;
+}
+
+.about-us{
+    color: #219ebc;
+    font-size: 1.2rem;
+}
+
+.about-us--desc{
+font-size: 1rem;
+color: #6c757d;
+margin-top: 1rem;
+}
