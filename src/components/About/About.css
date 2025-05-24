@@ -1,40 +1,151 @@
-
-.about-box{
-    display: flex;
-    background-color: whitesmoke;
+.about-box {
+  display: flex;
+  position: relative;
+  top: -8rem;
 }
 
-.about-box--img{
-    position: relative;
-    padding: 2rem 3rem;
+.about-box--img {
+  position: relative;
+  padding: 2rem 3rem;
 }
 
-.window-img{
-    width: 450px;
-    height: 450px;
+.window-img {
+  width: 450px;
+  height: 450px;
 }
 
-.about-img{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    bottom: -30px;
-    right: -70px;
+.about-img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: -30px;
+  right: -70px;
 }
 
-.about-us--texts{
-    text-align: right;
-    padding: 2rem 3rem;
-    overflow: hidden;
+.about-us--texts {
+  text-align: right;
+  padding: 2rem 3rem;
+  overflow: hidden;
 }
 
-.about-us{
-    color: #219ebc;
+.about-us {
+  color: #219ebc;
+  font-size: 1.2rem;
+}
+
+.about-us--desc {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 1rem;
+}
+
+.about-features {
+  display: flex;
+  justify-content: space-between;
+}
+.about-features ul {
+  padding: 3rem 5rem;
+}
+.about-features ul li {
+  list-style: none;
+  color: #6c757d;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.about-icon {
+  color: #219ebc;
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+  }
+
+  .about-box--img {
+    padding: 0;
+  }
+
+  .window-img {
+    width: 100%;
+  }
+
+  .about-img {
+    width: 200px;
+    height: 200px;
+    right: -35px;
+  }
+
+  .about-us--texts {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .about-us--title {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+  }
+
+  .about-us--desc {
+    width: 50%;
+    margin: auto;
+    padding-top: 1rem;
+  }
+
+  .about-features {
+    flex-direction: column;
+  }
+
+  .about-features ul {
+    padding: 1rem 0;
+  }
+
+  .about-features ul li {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-img {
+    right: 180px;
+  }
+
+  .about-us--texts {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-box--img {
+    margin: auto;
+  }
+
+  .about-us--texts {
+    margin-top: 2rem;
+  }
+
+  .about-us--desc {
     font-size: 1.2rem;
-}
+  }
 
-.about-us--desc{
-font-size: 1rem;
-color: #6c757d;
-margin-top: 1rem;
+  .about-features ul {
+    margin: auto;
+  }
+
+  .about-features ul li {
+    font-size: 1.3rem;
+  }
 }
