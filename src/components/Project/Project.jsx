@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Project.css';
 import project1 from '../../assets/img/gallery1.jpg';
 import project2 from '../../assets/img/gallery2.jpg';
@@ -8,7 +8,9 @@ import project5 from '../../assets/img/gallery5.jpg';
 import project6 from '../../assets/img/gallery6.jpg';
 
 export default function Project() {
-    const [zoomImg, setZoomImg] = useState(null);
+    const [zoomImg, setZoomImg] = React.useState(null);
+
+    const images = [project1, project2, project3, project4, project5, project6];
 
     return (
         <>
@@ -22,7 +24,7 @@ export default function Project() {
                     <h1 className="project-title">پروژه های ما</h1>
                 </div>
                 <div className="project-container">
-                    {[project1, project2, project3, project4, project5, project6].map((img, idx) => (
+                    {images.map((img, idx) => (
                         <div className="project-box" key={idx}>
                             <img
                                 src={img}

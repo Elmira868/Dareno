@@ -6,6 +6,7 @@ import Reason from './components/Reason/Reason';
 import Services from './components/Services/Services';
 import Pricing from './components/Pricing/Pricing';
 import Project from './components/Project/Project';
+import Testimonials from './components/Testimonial/Testimonial';
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
     <Services/>
 <Pricing/>
 <Project/>
+<Testimonials/>
    </div>
   )
 }
