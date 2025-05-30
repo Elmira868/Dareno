@@ -7,9 +7,9 @@ import Services from './components/Services/Services';
 import Pricing from './components/Pricing/Pricing';
 import Project from './components/Project/Project';
 import Testimonials from './components/Testimonial/Testimonial';
-function App() {
-  
+import Footer from './components/Footer/Footer';
 
+function App() {
   return (
    <div>
     <Header/>
@@ -19,6 +19,7 @@ function App() {
 <Pricing/>
 <Project/>
 <Testimonials/>
+<Footer/>
    </div>
   )
 }
